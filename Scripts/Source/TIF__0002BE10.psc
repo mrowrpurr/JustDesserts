@@ -6,11 +6,12 @@ Scriptname TIF__0002BE10 Extends TopicInfo Hidden
 Function Fragment_0(ObjectReference akSpeakerRef)
 Actor akSpeaker = akSpeakerRef as Actor
 ;BEGIN CODE
-akSpeakerRef.Disable()
+akSpeaker.Disable()
+akSpeaker.Kill()
 Form sweetroll = Game.GetForm(0x64B3D)
 Explosion boom = Game.GetForm(0xebb73) as Explosion
-akSpeakerRef.PlaceAtMe(boom)
-akSpeakerRef.PlaceAtMe(sweetroll, 40)
+akSpeaker.PlaceAtMe(boom)
+akSpeaker.PlaceAtMe(sweetroll,750)
 ;END CODE
 EndFunction
 ;END FRAGMENT
