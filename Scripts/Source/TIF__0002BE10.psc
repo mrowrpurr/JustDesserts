@@ -11,7 +11,7 @@ akSpeaker.Kill()
 Form sweetroll = Game.GetForm(0x64B3D)
 Explosion boom = Game.GetForm(0xebb73) as Explosion
 akSpeaker.PlaceAtMe(boom)
-akSpeaker.PlaceAtMe(sweetroll,750)
+akSpeaker.PlaceAtMe(sweetroll, 75)
 ;END CODE
 EndFunction
 ;END FRAGMENT
